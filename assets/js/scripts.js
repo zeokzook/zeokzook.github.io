@@ -4,7 +4,7 @@ jQuery(function() {
       dataType: 'html',
       success: function(data) {
           $('#header').html(data);
-          document.getElementById("header").scrollIntoView();
+          document.getElementById("header").scrollIntoView({behavior: "instant"});
       },
       error: function(xhr, error){
           //alert('error. see console for details');
