@@ -57,34 +57,12 @@ section{
       -ms-transform: scale(1.075);
       transform: scale(1.075); }
 
-p{
-    text-align: justify;
-}
-
 .clickable:hover{
     color:aliceblue;
 }
 
 .technical-skills i{
     font-size: 10em;
-}
-
-.bg-img{
-  background-repeat: no-repeat; 
-  background-size: 100%; 
-  background-position: center;
-}
-
-@media screen and (max-width: 480px) {
-  .bg-img{
-    background-size: 100vh;
-  }
-}
-
-@media screen and (min-width: 1024px){
-  .bg-img{
-    height:500px;
-  }
 }
 
 /* Posts */

@@ -1,0 +1,45 @@
+.bg-img{
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: 100vh;
+    background-position: top -70% center;
+}
+ @media screen and (min-width: 768px){
+    .bg-img{
+        height: 500px;
+        background-size: cover; 
+        background-position: top center;
+    }
+ }
+
+.summary-section{
+    margin-top: 1em !important;
+}
+
+.summary-title p{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:1024px){
+    ul.summary-content li{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    ul.summary-list li{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1024px){
+    ul.summary-list li{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    ul.summary-list li{
+        font-size: 15px;
+    }
+}
+
