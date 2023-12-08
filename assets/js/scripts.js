@@ -4,6 +4,7 @@ jQuery(function() {
       dataType: 'html',
       success: function(data) {
           $('#header').html(data);
+          document.getElementById("header").scrollIntoView();
       },
       error: function(xhr, error){
           //alert('error. see console for details');
