@@ -69,6 +69,24 @@ p{
     font-size: 10em;
 }
 
+.bg-img{
+  background-repeat: no-repeat; 
+  background-size: 100%; 
+  background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+  .bg-img{
+    background-size: 100vh;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .bg-img{
+    height:500px;
+  }
+}
+
 /* Posts */
 .posts {
     display: -moz-flex;
