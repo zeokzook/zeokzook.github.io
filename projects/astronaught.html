@@ -29,7 +29,7 @@
 
   <main>
     <!--Banner-->
-    <div class="px-lg-4 py-5 text-center bg-img d-flex align-items-center justify-content-center bg-img" style="background-image: url('../images/AstroNaught\ Gameplay.gif');">
+    <div class="px-lg-4 text-center bg-img d-flex align-items-center justify-content-center bg-img" style="background-image: url('../images/AstroNaught\ Gameplay.gif');">
       <div class="px-3 px-md-5 mx-3 mx-lg-0 py-3" style="background-color: rgba(0,0,0, 0.35);">
         <h1 class="display-5 fw-bold text-body-emphasis">Astronaught</h1>
         <p class="lead mb-4 text-center">An Exploration Tower Defense game. Gather resources, fight enemies at night and escape by gathering biofuel from defeated enemies.</p>
@@ -39,34 +39,209 @@
     <!--Summary-->
     <section class="mx-5 summary-section">
       <div class="container-lg">
-        <div>
-          <ul class="list-group list-group-horizontal-md justify-content-center summary-list">
-            <li class="list-group-item">Completed On: 21/09/2023</li>
-            <li class="list-group-item">Duration: 1 Week</li>
-            <li class="list-group-item">Epic MegaJam 2023 Entry</li>
-          </ul>
-        </div>
+        <ul class="list-group list-group-horizontal-md justify-content-center summary-list my-4">
+          <li class="list-group-item flex-fill text-center">Completed On: 21/09/2023</li>
+          <li class="list-group-item flex-fill text-center">Duration: 1 Week</li>
+          <li class="list-group-item flex-fill text-center">Epic MegaJam 2023 Entry</li>
+        </ul>
         <div class="row">
-          <div class="col-lg-3 col-xl-2 summary-title align-items-center justify-content-lg-top justify-content-center border-bottom d-flex d-lg-none">
-            <p>Summary</p>
+          <div class="col-lg text-center text-lg-start py-3">
+            <h2 class="text-center border-bottom">Tech</h2>
+            <h3>Unreal Engine</h3>
+            <ul class="list-group list-group-flush summary-content ps-lg-3 mx-3 mx-lg-0">
+              <li class="list-group-item bg-transparent text-center text-lg-start">Blueprints</li>
+              <li class="list-group-item bg-transparent text-center text-lg-start">Unreal C++</li>
+              <li class="list-group-item bg-transparent text-center text-lg-start">Gameplay Ability System</li>
+              <li class="list-group-item bg-transparent text-center text-lg-start">Gameplay Tags</li>
+            </ul>
           </div>
-          <div class="col-lg-3 col-xl-2 summary-title align-items-center d-none d-lg-flex">
-            <p>Summary</p>
+          <div class="col-lg text-center text-lg-start py-3">
+            <h2 class="text-center border-bottom">Summary</h2>
+            <ul class="list-group list-group-flush summary-content mx-3 mx-lg-0">
+              <li class="list-group-item bg-transparent text-center text-lg-start">Part of a team of 5 as one of the programmers</li>
+              <li class="list-group-item bg-transparent text-center text-lg-start">Programmed certain parts of the gameplay</li>
+              <li class="list-group-item bg-transparent text-center text-lg-start">In charge of spawning Resource Areas and Buildings</li>
+              <li class="list-group-item bg-transparent text-center text-lg-start">Programmed Resource Gathering and Jetpack Ability</li>
+            </ul>
           </div>
-          <div class="col">
-            <ul class="list-group list-group-flush summary-content">
-              <li class="list-group-item bg-transparent text-center text-md-start">Part of a team of 5 as one of the programmers</li>
-              <li class="list-group-item bg-transparent text-center text-md-start">Programmed certain parts of the gameplay</li>
-              <li class="list-group-item bg-transparent text-center text-md-start">In charge of spawning Resource Areas and Buildings</li>
-              <li class="list-group-item bg-transparent text-center text-md-start">Programmed Resource Gathering and Jetpack Ability</li>
+          <div class="col-lg-2 text-center text-lg-start py-3">
+            <h2 class="text-center border-bottom">Links</h2>
+            <div class="d-flex links-buttons flex-wrap justify-content-center justify-content-lg-start">
+              <a class="btn btn-secondary btn-lg" href="#" role="button">Itch.io</a>
+              <a class="btn btn-secondary btn-lg" href="#" role="button">Github</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!--Contributions-->
-    <section>
+    <section class="contributions">
+      <div class="container border-bottom text-center">
+        <h2 class="fs-1">CONTRIBUTIONS</h2>
+      </div>
+
+      <div class="container-lg">
+        <div class="row my-4">
+          <div class="col-lg-5">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../images/Early-Stages-of-Spawning.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/ResourceSpawning-Updated.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg fs-5">
+            <h2 class="text-center text-md-start">Resource Area Spawning</h2>
+            <p>
+              I developed the resource and building spawning system for the game. We wanted resource areas 
+              and buildings to spawn around the player. So, I made a system where in the beginning of the 
+              game, resource areas and buildings will spawn around the player in a circle around the 
+              spaceship. On a new day, old resource areas will despawn and respawn around the spaceship. 
+              Resource Areas will not spawn close around the spaceship but will spawn outside of a certain 
+              radius that can be modified. 
+            </p>
+            <p>
+              After we got some meshes made by our artist and the terrain of the map done, some 
+              additional changes need to be done. Since the terrain in our game is bumpy, the resource 
+              points will rotate accordingly based on the normal of the terrain. This is done by doing 
+              a line trace and getting the normals from that. 
+            </p>
+            <p>
+              The resource points that spawn are randomly selected from a data table. This data table 
+              holds data for the mesh, the resource amount and the type. I made it into a data table so 
+              anyone can add different variants of resource areas without the need of a programmer. All 
+              that needs to be done is adding a new row and setting the new mesh and resource amount.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-lg">
+        <div class="row my-4">
+          <div class="col-lg-5 order-lg-2">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../images/Early-Stages-of-Spawning.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg fs-5 order-lg-1">
+            <h2 class="text-center text-md-start">Building Spawning</h2>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
       
+      <!--Show Template button-->
+      <div class="d-none justify-content-center">
+        <button onclick="showContent()" type="button" class="btn btn-primary">Show Template</button>
+      </div>
+      <!--EXAMPLES REMOVE WHEN FINISHED EDITING-->
+      <template>
+        <p class="fs-1 text-center">TEMPLATE BELOW REMOVE WHEN DONE</p>
+        <div class="container-lg">
+          <div class="row my-4">
+            <div class="col-lg-5">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/Early-Stages-of-Spawning.gif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg fs-5">
+              <h2 class="text-center text-md-start">Title</h2>
+              <p>
+                Qui Lorem sit Lorem excepteur voluptate exercitation proident eu sint sint. Pariatur ex sunt id ullamco mollit elit est est do sunt nisi. Adipisicing est minim sunt enim magna consectetur esse laborum duis nulla proident duis. Sunt occaecat incididunt voluptate esse in excepteur aute culpa et. Pariatur irure excepteur consectetur ex irure et cupidatat nulla consectetur ea consectetur enim.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-lg">
+          <div class="row my-4">
+            <div class="col-lg-5 order-lg-2">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/Early-Stages-of-Spawning.gif" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg fs-5 order-lg-1">
+              <h2 class="text-center text-md-start">Title</h2>
+              <p>
+                Aute nulla anim officia ullamco consectetur. Qui quis irure occaecat est anim excepteur quis labore. Dolor sint Lorem aute et tempor eu. Elit ut in non deserunt sint quis. Ex do voluptate aliquip esse ut sit sunt qui excepteur. Non deserunt consectetur consequat est et magna mollit commodo mollit tempor nostrud duis Lorem. Est sunt irure eiusmod proident. Sunt Lorem veniam nostrud enim ea velit ea aute minim culpa laborum mollit. Officia ex ad ad duis quis occaecat. Anim dolore labore ipsum voluptate ipsum occaecat. Reprehenderit officia excepteur proident mollit ut culpa tempor tempor ea irure nisi. Esse laborum nulla reprehenderit qui incididunt proident exercitation id consectetur officia enim ad labore mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </template>
+
     </section>
     <!--/Contributions-->
     
