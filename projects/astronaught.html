@@ -19,6 +19,18 @@
 
     <link rel="stylesheet" href="../assets/dist/css/styles.css">
     <link rel="stylesheet" href="../assets/dist/css/projectstyles.css">
+
+    <style>
+      @media (pointer: coarse) and (hover: none) {
+        .banner {
+          background: url('../images/AstroNaught\ Gameplay.gif') black no-repeat center center scroll;
+        }
+
+        .banner video {
+          display: none;
+        }
+      }
+    </style>
           
 </head>
 <body>
@@ -29,10 +41,24 @@
 
   <main>
     <!--Banner-->
-    <div class="px-lg-4 text-center bg-img d-flex align-items-center justify-content-center bg-img" style="background-image: url('../images/AstroNaught\ Gameplay.gif');">
-      <div class="px-3 px-md-5 mx-3 mx-lg-0 py-3" style="background-color: rgba(0,0,0, 0.35);">
-        <h1 class="display-5 fw-bold text-body-emphasis">Astronaught</h1>
-        <p class="lead mb-4 text-center">An Exploration Tower Defense game. Gather resources, fight enemies at night and escape by gathering biofuel from defeated enemies.</p>
+    <div class="banner">
+
+      <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+      <div class="overlay"></div>
+    
+      <!-- The HTML5 video element that will create the background video on the header -->
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="../videos/AstroNaught Gameplay.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3">Astronaught</h1>
+            <p class="lead mb-0">An Exploration Tower Defense game. Gather resources, fight enemies at night and escape by gathering biofuel from defeated enemies.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -67,8 +93,8 @@
           <div class="col-lg-2 text-center text-lg-start py-3">
             <h2 class="text-center border-bottom">Links</h2>
             <div class="d-flex links-buttons flex-wrap justify-content-center justify-content-lg-start">
-              <a class="btn btn-secondary btn-lg" href="#" role="button">Itch.io</a>
-              <a class="btn btn-secondary btn-lg" href="#" role="button">Github</a>
+              <a class="btn btn-secondary btn-lg" href="https://flinnf.itch.io/astronaught" role="button">Itch.io</a>
+              <a class="btn btn-secondary btn-lg" href="https://github.com/zeokzook/MegaJam2023" role="button">Github</a>
             </div>
           </div>
         </div>
@@ -84,7 +110,7 @@
       <div class="container-lg">
         <div class="row my-4">
           <div class="col-lg-5">
-            <div id="carouselExampleCaptions" class="carousel slide">
+            <div id="carousel1" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="../images/Early-Stages-of-Spawning.gif" class="d-block w-100" alt="...">
@@ -92,15 +118,12 @@
                 <div class="carousel-item">
                   <img src="../images/ResourceSpawning-Updated.gif" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                  <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
-                </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -135,23 +158,20 @@
       <div class="container-lg">
         <div class="row my-4">
           <div class="col-lg-5 order-lg-2">
-            <div id="carouselExampleCaptions" class="carousel slide">
+            <div id="carousel2" class="carousel slide" data-bs-theme="dark">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="../images/Early-Stages-of-Spawning.gif" class="d-block w-100" alt="...">
+                  <img src="../images/SpawnedResourcesInBuildings.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="../images/ResourceDataTable.png" class="d-block w-100" alt="...">
+                  <img src="../images/BuildingBP.png" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -159,6 +179,65 @@
           </div>
           <div class="col-lg fs-5 order-lg-1">
             <h2 class="text-center text-md-start">Building Spawning</h2>
+            <p>
+              The building spawning is also done in the same system with an added radius for the 
+              buildings to spawn further away than the max radius for the Resource Areas. These buildings give
+              the player more things to explore and Resource Areas also spawn inside them.
+            </p>
+            <p>
+              Each building is a blueprint that has box collisions to determine where Resource Areas will spawn. 
+              The type and number of resource spawned in the buildings can be tweaked. Depending on the 
+              size of the buildings, we can have more Resource Areas spawn or have Resource Areas that offer more 
+              more resources. 
+            </p>
+            <p>
+              The buildings only spawn once in the beginning of the game. It would have been great 
+              if the buildings do spawn more if you wander far away enough from the cluster of buildings so 
+              it really feels like there is more to explore. There are only two types of buildings at the moment 
+              but more could easily be added by duplicating one of the building blueprints and changing 
+              the mesh and variables depending on what we want. The only time consuming process would be adding 
+              the box components for resource area spawning.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-lg">
+        <div class="row my-4">
+          <div class="col-lg-5">
+            <div id="carousel1" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../images/Early-Stages-of-Spawning.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../images/ResourceSpawning-Updated.gif" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg fs-5">
+            <h2 class="text-center text-md-start">Resource Gathering Ability</h2>
+            <p>
+              To collect resources in the game, the player has to walk up to a Resource Area and hold right
+              click to start collecting. The player will stop collecting when the player walks too far away, stops
+              holding right click or the resource has depleted.
+            </p>
+            <p>
+              This ability was easily done with the help of the Gameplay Ability System (GAS). GAS takes some time
+              to setup and learn but it is a very useful system that I used in a project from my previous company.
+              In the GatherResource Abiity Blueprint, all that needs to be done is to sphere trace around the player
+              with an Ability System Component and find a Resource Area and start depleting it with a timer inside the
+              ability. Every interval, we apply a Gameplay Effect to the Player that increases the Resource attribute.
+            </p>
             <p>
               
             </p>
