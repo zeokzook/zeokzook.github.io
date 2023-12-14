@@ -24,8 +24,14 @@ jQuery(function() {
     });
 });
 
-function showContent() {
-    let temp = document.getElementsByTagName("template")[0];
-    let clon = temp.content.cloneNode(true);
-    document.body.appendChild(clon);
- };
+var carousels = document.getElementsByClassName("carousel");
+
+if(carousels.length > 1)
+{
+    for (let index = 0; index < carousels.length; index++) {
+        const carouselID = "carousel"+index;
+        carousels[index].id = carouselID;
+        carousels[index].getElementsByClassName("carousel-control-prev")[0].dataset.bsTarget = "#"+carouselID;
+        carousels[index].getElementsByClassName("carousel-control-next")[0].dataset.bsTarget = "#"+carouselID;
+    }
+}
