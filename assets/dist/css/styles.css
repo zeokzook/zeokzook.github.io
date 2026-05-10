@@ -214,3 +214,13 @@ section{
   opacity: 0.5;
   z-index: 1;
 }
+
+.pop{
+  cursor:hand;
+  cursor:pointer;
+}
+
+.popVideo{
+  cursor:hand;
+  cursor:pointer;
+}

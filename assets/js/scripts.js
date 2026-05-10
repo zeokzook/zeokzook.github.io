@@ -35,3 +35,17 @@ if(carousels.length > 1)
         carousels[index].getElementsByClassName("carousel-control-next")[0].dataset.bsTarget = "#"+carouselID;
     }
 }
+
+$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+		});		
+});
+
+$(function() {
+		$('.popVideo').on('click', function() {
+			$('.videopreview').attr('src', $(this).find('source').attr('src'));
+			$('#videomodal').modal('show');
+		});		
+});
